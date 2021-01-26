@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react resume</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+    const rootEl=document.getElementById("root");
+    const Title= ({text})=> <h1><center>{text}</center></h1>;
+    const Img= ({text})=> <center><img src={text} width="200px" height="200px"/></center>;
+    const Para= ({text})=> <p>{text}</p>;
+    const Para1= ({text})=> <p><center>{text}</center></p>;
+    const Subheading= ({text})=> <h3><center>{text}</center></h3>;
+    const Unordered=({text})=><ul><li>{text}</li></ul>;
+    const Element=()=> (
+        <div>
+<Title text= 'RESUME' />
+<Img text="https://images-platform.99static.com/bDaRmHRRVYKxkSmtjlGQYQQPr9w=/168x0:1309x1141/500x500/top/smart/99designs-contests-attachments/101/101092/attachment_101092225?25"/>
+<Para1 text='Name:Belwin Levi Solomon D'/>
+<Para1 text='Adress: 221 B Baker street'/>
+<Para1 text='Email:belwin40863@gmail.com'/>
+<Para1 text='Phone number:9788889257'/>
+<Subheading text='OBJECTIVE'/>
+<Para1 text='Seeking a position in life to utilize my skills and abilities and achieve professional growth while being resourceful, innovative and flexible.'/>
+<Subheading text='EDUCATIONAL QUALIFICATIONS'/>  
+<Para1 text='HSC     : ROSE MARY MATRIC HIGHER SECONDARY SCHOOL         -96%'/> 
+<Para1 text='SSC     : ROSE MARY MATRIC HIGHER SECONDARY SCHOOL         -93%'/>
+<Para1 text='COLLEGE : LOYOLA ICAM COLLEGE OF ENGINNERING AND TECHNOLOGY-70%'/>
+<Subheading text='SOFTWARES KNOWN'/>
+<Unordered text='HTML'/> 
+<Unordered text='CSS'/> 
+<Unordered text='JAVASCRIPT'/>
+ <Unordered text='REACT JS'/>
+<Unordered text='MONGODB'/>
+ <Unordered text='SQL'/>
+  <Unordered text='SWIFT'/>
+   <Unordered text='NODE JS'/>
+<Subheading text='HOBBIES'/>
+<Unordered text='Gym'/> 
+<Unordered text='Cycling'/> 
+<Unordered text='Music'/> 
+<Unordered text='Travelling'/>
+<Subheading text='GENERAL INFO'/>
+<Para1 text='Gender: Male'/>
+<Para1 text='Age:23'/>
+<Para1 text='Marital status: unmarried'/>
+<Para1 text="Occupation:Student"/>
+</div>
+    );
+  
+    ReactDOM.render(<Element/>,rootEl)
+
+        </script>
+</body>
+</html>
